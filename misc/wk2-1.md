@@ -1,5 +1,5 @@
 # ?CTF 2025 Platform(公开赛道) - [Week2] 《关于我穿越到CTF的异世界这档事:破》 （难度：Lunatic下位）
-**Writer：DreamLost（QQ ID：Scarlet Secret）**
+**Writer：DreamLost（QQ ID：Scarlet Secret）**<br>
 **Solve Time: 2025-10-11 11:33:30**
 ## 题目背景
 
